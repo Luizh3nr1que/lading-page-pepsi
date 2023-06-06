@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0050a6;
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 1px solid red;
+    height: 90px;
+}
+
+header img{
+    width: 80px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+header img:hover{
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+nav{
+    display: flex;
+    gap: 30px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
