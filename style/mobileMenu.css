@@ -1,0 +1,67 @@
+.menu {
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    display: none;
+}
+
+
+.menuConteudo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 250px;
+    width: 40%;
+    height: 100%;
+    background-color: #ffffff;
+    border-right: 2px solid black;
+    animation: slide .5s infinite;
+    display: none;
+}
+
+@keyframes slide {
+    from {
+        margin-left: -150px;
+    }
+
+    to {
+        margin-left: 0px;
+        /* Ajuste o valor conforme necessário */
+    }
+}
+
+@keyframes slideFechar {
+    from {
+        margin-left: 0px;
+    }
+
+    to {
+        margin-left: -190px;
+    }
+}
+
+
+.navMobile {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    font-weight: 500;
+    gap: 20px;
+    padding: 20px 0px 20px 0px;
+    margin-top: 80px;
+}
+
+.navMobile a {
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+}
+
+.navMobile a:hover {
+    background-color: grey;
+}

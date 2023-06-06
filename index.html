@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, user-scalable=no">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="style/mobileMenu.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
     <title>Luiz webSite</title>
 </head>
+
+
 <body>
     <header>
         <img src="img/logo-pepsi.png" alt="pepse">
@@ -23,24 +34,42 @@
     </header>
 
 
+    <div class="mobileMenuContainer">
+        <div class="menuIcon"><ion-icon class="menu" name="menu-outline"></ion-icon></div>
+
+        <div class="menuConteudo">
+            <div class="navMobile">
+                <a href="#">Home</a>
+                <a href="#">Produtos</a>
+                <a href="#">Oque a de novo</a>
+                <a href="#">Ente em contato</a>
+            </div>
+        </div>
+    </div>
+
     <section>
         <div class="container">
 
             <div class="escrita">
                 <h1>Isso é o que eu gosto</h1>
                 <p>Refresque-se com a Pepsi: O sabor inconfundível que conquista o mundo</p>
-                <button>VER PRODUTOS</button>
+                <button class="buttonEscrita">VER PRODUTOS</button>
             </div>
 
             <div class="img">
-                <img src="img/blue-pepsi.png" alt="Pepsi">
+                <img id="imagem" src="img/blue-pepsi.png" alt="Pepsi">
             </div>
 
         </div>
     </section>
- 
 
+    <footer>
+        <img class="pepsiBlue" src="img/blue-pepsi.png">
+        <img class="pepsiBlack" src="img/black-pepsi.png">
+    </footer>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
+
 </body>
+
 </html>
