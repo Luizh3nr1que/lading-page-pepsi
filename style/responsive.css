@@ -19,6 +19,7 @@
 
     .container .escrita {
         text-align: left;
+        gap: 50px;
     }
 
 
@@ -73,5 +74,12 @@
         transition: .3s ease-in-out;
         transform: translateX(-5px);
         cursor: pointer;
+    }
+}
+
+
+@media screen and (max-width:287px) {
+    .navMobile a {
+        font-size: 20px;
     }
 }

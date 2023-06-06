@@ -65,3 +65,10 @@
 .navMobile a:hover {
     background-color: grey;
 }
+
+.fecharMenu {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    font-size: 35px;
+}

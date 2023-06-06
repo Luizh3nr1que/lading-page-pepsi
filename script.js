@@ -43,15 +43,22 @@ img.forEach((img) => {
 
 const buttonMenuMobile = document.querySelector('.menu');
 const menuMobileAberto = document.querySelector('.menuConteudo')
+const menuIcon = document.querySelector('.menuIcon')
 
 buttonMenuMobile.addEventListener('click', () => {
-    if (menuMobileAberto.style.display === 'none') {
-        menuMobileAberto.style.display = 'block';
-        menuMobileAberto.style.animation = 'slide .5s linear forwards';
-    } else {
-        menuMobileAberto.style.animation = 'slideFechar .3s linear forwards';
-        setTimeout(() => {
-            menuMobileAberto.style.display = 'none';
-        }, 300);
-    }
+    menuMobileAberto.style.display = 'block';
+    menuMobileAberto.style.animation = 'slide .5s linear forwards';
+    menuIcon.style.display = 'none';
+
 });
+
+const buttonFecharMenuMobile = document.querySelector('.fecharMenu');
+
+buttonFecharMenuMobile.addEventListener('click', () => {
+    menuMobileAberto.style.animation = 'slideFechar .3s linear forwards';
+    setTimeout(() => {
+        menuMobileAberto.style.display = 'none';
+    }, 300);
+    menuIcon.style.display = 'block';
+
+})

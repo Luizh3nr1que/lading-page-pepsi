@@ -57,6 +57,7 @@ nav a {
     color: white;
     text-decoration: none;
     position: relative;
+    font-size: 18px;
 }
 
 
@@ -133,11 +134,12 @@ section {
     justify-content: center;
     padding: 10px;
     font-weight: 500;
+    box-shadow: 0 0 0 4px #0050a6, 0 0 0 7px rgb(255, 255, 255);
+
 }
 
 .container .escrita button:hover {
     transition: .3s ease-in-out;
-    box-shadow: 0 0 0 4px #0050a6, 0 0 0 7px rgb(255, 255, 255);
     letter-spacing: 2px;
 }
 
